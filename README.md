@@ -45,16 +45,12 @@ print(f"Time to 95% convergence: {result['convergence_time']:.4f}s")
 
 ### Ising Model Energy
 
-```math
-E = \sum_{i<j} J_{ij} s_i s_j + \sum_i h_i s_i
-```
-
-where $s_i \in \{-1, +1\}$ are spin variables.
+$\text{Energy} = \sum_{i<j} J_{ij} s_i s_j + \sum_i h_i s_i$, where $s_i \in \{-1, +1\}$ are spin variables.
 
 ### QAP Cost Function
 
-```math
+$$
 \text{Cost} = \sum_{i=1}^{n} \sum_{j=1}^{n} F_{ij} \cdot D_{\pi(i)\pi(j)}
-```
+$$
 
 where $F$ is the flow matrix and $D$ is the distance matrix.
